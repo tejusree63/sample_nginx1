@@ -9,7 +9,7 @@ FROM ubuntu:18.04
 
 # Install Nginx.
 RUN \
-  apt-add-repository ‘deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main’ && \
+  sudo apt-add-repository ‘deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main’ && \
   apt-get update && \
   apt-get install -y nginx && \
   rm -rf /var/lib/apt/lists/* && \
